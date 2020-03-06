@@ -2,8 +2,8 @@ import path from "path";
 import { makeExecutableSchema } from "graphql-tools";
 import { fileLoader, mergeResolvers, mergeTypes } from "merge-graphql-schemas";
 
-const allTypes = fileLoader("./api/sayHello/sayHello.graphql");
-const allResolvers = fileLoader("./api/sayHello/sayHello.js");
+const allTypes = fileLoader(path.join(__dirname, "/api/**/*.graphql"));
+const allResolvers = fileLoader(path.join(__dirname, "/api/**/*.js"));
 
 const schema = makeExecutableSchema({
   typeDefs: mergeTypes(allTypes),
