@@ -9,6 +9,7 @@
     "@babel/core": "^7.8.6",
     "@babel/node": "^7.8.4",
     "@babel/preset-env": "^7.8.6",
+    "@playlyfe/gql": "^2.6.2",
     "dotenv": "^8.2.0",
     "graphql-tools": "^4.0.7",
     "graphql-yoga": "^1.18.3",
